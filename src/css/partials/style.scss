@@ -15,33 +15,28 @@ footer {
     margin:0 auto;
     position:relative;
     margin-top:-140px;
-    height:60px;
+    height:140px;
     font-family: $Tahoma;
-    display: table;
+    display: block;
     width: 100%;
-    padding: 40px 20px;
-    box-sizing: border-box;
     background:$DarkBlue2 url('../img/logo-footer.png') center center no-repeat;
 }
 header{
-    border: 1px solid red;
-    display: table;
-    padding: 40px 20px; 
+    display: block;
     width: 100%;
-    box-sizing: border-box;
 }
-.l-container{
-	width: 998px;
-	overflow: hidden;
-	margin: 0 auto;
+.l-container{ width: 998px; overflow: hidden; margin: 0 auto; display: table; padding: 0;
+	&--footer{ padding: 47px 20px; }
+	&--header{ padding: 33px 20px; }
 }
 .l-wrap {
-	max-width:100%;
-	min-width:1000px;
-	margin:0 auto;
+	// width:100%;
+	// max-width:100%;
+	// min-width:1000px;
+	// margin:0 auto;
 	position:relative; 
-	min-height:100%;
-	height:auto !important;
+	// min-height:100%;
+	// height:auto !important;
 	height:100%;
 	color: #000; 
 	text-align: left;
@@ -86,18 +81,18 @@ header{
 }
 /*-----------------------------------BLOCKS----------------------------------*/
 .b-logo{ overflow: hidden; display: table-cell; vertical-align: middle; width: 340px;
-	&__href{ display: block; overflow: hidden; border: 1px solid red; color: $DarkBlue; }
+	&__href{ display: block; overflow: hidden; color: $DarkBlue; }
 	&__icon{ display: block; width: 50px; height: 45px; float: left; }
-	&__text{ display: inline-block; border: 1px solid red; font-family: $OpenSans; font-weight: $Regular; font-size: 36px; }
+	&__text{ display: inline-block; font-family: $OpenSans; font-weight: $Regular; font-size: 36px; }
 	&__text b{ font-weight: $Bold; }
 	&__text--m10px { margin: 0 0 0 10px; }
 }
 
-.b-region{ display: table-cell; overflow: hidden; border: 1px solid red; vertical-align: middle; padding: 0 0 0 50px; 
+.b-region{ display: table-cell; overflow: hidden; vertical-align: middle; padding: 0 0 0 50px; 
 	&__select{ font-family: $Tahoma; font-size: 1.5em; color: $Gray; }
 }
 
-.b-account-block{ 
+.b-account-block{ vertical-align: middle; overflow: hidden; display: table-cell;
 	ul { display: inline-block; float: right; }
 	li { display: inline-block; }
 	&__href{ color: $Yellow; text-decoration: none; font-family: $Tahoma; font-size: 1.5em; background:transparent url('../img/icons.png') 2px 2px no-repeat; padding: 0 0 0 20px; margin: 0 0 0 20px; }
@@ -107,8 +102,17 @@ header{
 }
 
 .b-copyright{ color: $LightBlue; font-size: 1.5em; display: table-cell; vertical-align: middle; }
-.b-develop{ border: 1px solid red; display: table-cell; vertical-align: middle; 
+.b-develop{ display: table-cell; vertical-align: middle; 
 	&__href{ font-family: $Tahoma; font-size: 11px; color: $LightBlue; text-decoration: none; display: block; float: right; padding: 30px 0 0 10px; background:transparent url('../img/logo-starcode.png') left top no-repeat; }
+}
+.b-main-nav{ width: 100%; background: $DarkBlue2; text-align: center;
+	&__list{ display: inline-block; }
+	&__item{ display: table-cell; 
+		&:last-child .b-main-nav__href{ border: none; }
+	}
+	&__item--active{ background: $NormalBlue; }
+	&__href{ border-right: 1px solid $NormalBlue; color: $White; font-family: $OpenSans; font-size: 1.7em; text-decoration: none; padding: 20px 0; display: block; }
+	&__href:hover{ background: $NormalBlue; }
 }
 /*-----------------------------------HOLDERS----------------------------------*/
 
