@@ -80,6 +80,9 @@ header{
     *zoom: 1;
 }
 /*-----------------------------------BLOCKS----------------------------------*/
+.b-block{
+	&__h3{ display: block; text-align: center; font-size: 4.4em; font-family: $OpenSans; font-weight: $SemiBold; }
+}
 .b-logo{ overflow: hidden; display: table-cell; vertical-align: middle; width: 340px;
 	&__href{ display: block; overflow: hidden; color: $DarkBlue; }
 	&__icon{ display: block; width: 50px; height: 45px; float: left; }
@@ -112,7 +115,10 @@ header{
 	}
 	&__item--active{ background: $NormalBlue; }
 	&__href{ border-right: 1px solid $NormalBlue; color: $White; font-family: $OpenSans; font-size: 1.7em; text-decoration: none; padding: 20px 0; display: block; }
-	&__href:hover{ background: $NormalBlue; }
+	&__href:hover{ background: $NormalBlue; transition: 0.3s; }
+}
+.b-adv-text{ background:transparent url('../img/adv-text.jpg'); text-align: center;
+	&__text{ display: block; text-align: center; vertical-align: middle; text-transform: uppercase; font-size: 3.9em; color: $White; font-family: $OpenSans; font-weight: $SemiBold; padding: 23px 20px;}
 }
 /*-----------------------------------HOLDERS----------------------------------*/
 

@@ -13,9 +13,15 @@ var gulp = require('gulp'),
     rimraf = require('rimraf'),
     gutil = require('gulp-util'),
     browserSync = require("browser-sync"),
+    spritesmith = require('gulp.spritesmith'),
     reload = browserSync.reload;
 
 var path = {
+    sprites : {
+        images: 'src/sprite/*.*',
+        buildPath: 'src/img/',
+        cssPath: 'src/css/sprite/'    
+    },
     build: { //Тут мы укажем куда складывать готовые после сборки файлы
         html: 'build/',
         js: 'build/js/',
@@ -123,6 +129,18 @@ gulp.task('pictures:build', function () {
 gulp.task('fonts:build', function() {
     gulp.src(path.src.fonts)
         .pipe(gulp.dest(path.build.fonts))
+});
+
+gulp.task('sprite:build', function() {
+    var spriteData = 
+        gulp.src(path.sprites.images) // путь, откуда берем картинки для спрайта
+            .pipe(spritesmith({
+                imgName: 'sprite.png',
+                cssName: 'sprite.css',
+            }));
+
+    spriteData.img.pipe(gulp.dest(path.sprites.buildPath)); // путь, куда сохраняем картинку
+    spriteData.css.pipe(gulp.dest(path.sprites.cssPath)); // путь, куда сохраняем стили
 });
 
 // WATCHER -----------------------
