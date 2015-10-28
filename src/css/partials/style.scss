@@ -23,7 +23,7 @@ header{
     display: block;
     width: 100%;
 }
-.l-container{ width: 980px; overflow: hidden; margin: 0 auto; display: table; padding: 0;
+.l-container{ box-sizing: border-box; padding: 0 20px; width: 980px; overflow: hidden; margin: 0 auto; display: table;
 	&--footer{ padding: 47px 20px; }
 	&--header{ padding: 33px 20px; }
 }
@@ -84,8 +84,8 @@ header{
     *zoom: 1;
 }
 /*-----------------------------------BLOCKS----------------------------------*/
-.b-block{ display:block; overflow: hidden; margin-bottom: 90px; width: 100%;
-	&__h3{ display: block; text-align: center; font-size: 4.4em; font-family: $OpenSans; font-weight: $SemiBold; margin: 0 0 1.8em 0; }
+.b-block{ display:block; overflow: hidden; margin-bottom: 45px; margin-top: 45px; width: 100%;
+	&__h3{ display: block; text-align: center; font-size: 4.4em; font-family: $OpenSans; font-weight: $SemiBold; margin: 0 0 1em 0; }
 }
 .b-logo{ overflow: hidden; display: table-cell; vertical-align: middle; width: 340px;
 	&__href{ display: block; overflow: hidden; color: $DarkBlue; }
@@ -121,13 +121,13 @@ header{
 	&__href{ border-right: 1px solid $NormalBlue; color: $White; font-family: $OpenSans; font-size: 1.7em; text-decoration: none; padding: 20px 0; display: block; }
 	&__href:hover{ background: $NormalBlue; transition: 0.3s; }
 }
-.b-adv-text{ background:transparent url('../img/adv-text.jpg'); text-align: center;
-	&__text{ display: block; text-align: center; vertical-align: middle; text-transform: uppercase; font-size: 3.7em; color: $White; font-family: $OpenSans; font-weight: $SemiBold; padding: 23px 20px;}
+.b-adv-text{ background:transparent url('../img/adv-text.jpg'); text-align: center; margin: 0 0 70px 0; 
+	&__text{ display: block; text-align: center; vertical-align: middle; text-transform: uppercase; font-size: 3.7em; color: $White; font-family: $OpenSans; font-weight: $SemiBold; padding: 23px 0;}
 }
 .b-how-it-work{ display: block; overflow: visible;
 	&__list{ display: block; margin-right: -50px; overflow: visible; }
 	&__item{ display: block; float: left; width: 20%; position: relative;
-		&:after{ content: ' '; display: block; position: absolute; top: 0; right: 13px; width: 34px; height: 100%; background:transparent url('../img/arrow-left.png') center 65px no-repeat; }
+		&:after{ content: ' '; display: block; position: absolute; top: 0; right: 7px; width: 34px; height: 100%; background:transparent url('../img/arrow-left.png') center 65px no-repeat; }
 		&:last-child:after{ display: none; }
 	}
 	&__text{ text-align: center; width: 159px; font-size: 13px; color: #000; font-family: $OpenSans; font-weight: $SemiBold; padding-top: 15px; position: relative; }
@@ -135,7 +135,7 @@ header{
 	&__icon--dev{  }
 }
 .b-what-it-is{ background: $LightGray2; min-height: 505px; position: relative;
-	&__image{ display: block; float: left; width: 372px; margin: 0 46px 0 0; position: absolute; bottom: 0; }
+	&__image{ display: block; float: left; width: 372px; margin: 0 46px 0 0; position: relative; bottom: 0; left: 20px; }
 	&__text{ font-family: $OpenSans; color: $LightGray3; display: block; margin: 0 0 0 410px; padding: 40px 0 10px 0; }
 	&__text h3{ color: $Black; font-size: 4.4em; font-weight: $SemiBold; margin: 0 0 0.7em 0; }
 	&__text p{ font-size: 1.6em; margin: 0 0 2.6em 0; }
@@ -146,8 +146,9 @@ header{
 .b-faq{
 	&__wrapper{ overflow: hidden; margin-right: -20px; }
 	&__item{ box-sizing: border-box; padding: 0 20px 0 0; margin: 0 0 30px 0; }
-	&__question{ display: block; box-sizing: border-box; padding: 20px; font-family: $OpenSans; font-weight: $Regular; font-size: 1.7em; background: $LightGray; color: $LightBlue2; }
-	&__ask{ display: block; box-sizing: border-box; padding: 20px; font-family: $OpenSans; font-weight: $SemiBold; font-size: 1.7em; color: $YellowDark2; background: $YellowDark url('../img/faq-ask.png') 95% top no-repeat; }
+	&__question{ display: block; box-sizing: border-box; padding: 20px 20px 0 20px; font-family: $OpenSans; font-weight: $Regular; font-size: 1.7em; background: $LightGray; color: $LightBlue2; }
+	&__ask{ display: block; box-sizing: border-box; padding: 20px 20px 0 20px; font-family: $OpenSans; font-weight: $SemiBold; font-size: 1.7em; color: $YellowDark2; background: $YellowDark url('../img/faq-ask.png') 95% top no-repeat; }
+	p{ padding: 0 0 20px 0; }
 }
 .b-slider{ display: block; position: relative;
 	&__picture{ width: 100%; height: auto; }
@@ -159,7 +160,7 @@ header{
 		b{ font-weight: $SemiBold;}
 	}
 	&__label__description{ font-size: 1.2em; color: $LightGray3; padding: 0 0 20px 0; text-align: center; }
-	&__label__cashback{ display: inline-block; padding: 20px 0 17px 0; font-size: 2em; }
+	&__label__cashback{ font-family: $OpenSans; display: inline-block; padding: 20px 0 17px 0; font-size: 2em; }
 	&__label__perc{ background: $Green; font-size: 2em; padding: 7px; margin: 0 0 0 0.3em; border-radius: 50%; }
 	&__label__top &__label__wrapper{ border-top: 1px solid $LightGray4; border-right: 1px solid $LightGray4; border-left: 1px solid $LightGray4; }
 	&__label__bottom &__label__wrapper{ border-bottom: 1px solid $DarkBlue3; border-right: 1px solid $DarkBlue3; border-left: 1px solid $DarkBlue3; }

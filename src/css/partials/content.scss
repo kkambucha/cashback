@@ -1,0 +1,14 @@
+.b-content{
+	a{ text-decoration: none; color: $HrefsColor; }
+	a:hover{ text-decoration: underline; }
+	p{ font-family: $OpenSans; color: $LightGray3; font-size: 1.5em; line-height: 1.5em; margin: 0 0 2em 0; }
+	p.bold{ font-weight: $SemiBold; font-size: 2.3em; display: block; text-align: center; }
+	img{ display: inline-block; margin-bottom: 5em; }
+
+	.b-btn{ display: inline-block; background: $Green; font-family: $OpenSans; color: $White; border: 0; font-weight: $SemiBold; font-size: 2.4em; padding: 0.5em 1em; }
+	.b-btn:hover{ cursor: pointer; }
+
+	.align-right{ float: right; margin-left: 30px; }
+	.center{ margin: 0 auto; text-align: center; }
+	.m-top{ margin-top: 20px; }
+}
