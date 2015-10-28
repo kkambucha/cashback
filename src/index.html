@@ -6,6 +6,8 @@
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
 	<title>Заголовок</title>
 </head>
 <body>
@@ -13,20 +15,24 @@
         
 		//= template/header.html
 		
-		<div class="b-adv-text">
+		//= template/slider.html
+
+		<div class="b-adv-text b-block">
 			<p class="l-container b-adv-text__text">экономьте до 5% на покупке квартиры у нас</p>
 		</div>
 
-		<div class="b-block b-how-it-work l-container clearfix">
-			<h3 class="b-block__h3">Как это работает</h3>
-			<ul class="b-how-it-work__list">
-				<li class="b-how-it-work__item"><span class="b-how-it-work__icon"><img src="img/adv-building.png" alt=""></span><p class="b-how-it-work__text">Выберите застройщика</p></li>
-				<li class="b-how-it-work__item"><span class="b-how-it-work__icon"><img src="img/adv-docs.png" alt=""></span><p class="b-how-it-work__text">Распечатайте сертификат на Кэшбэк</p></li>
-				<li class="b-how-it-work__item"><span class="b-how-it-work__icon"><img src="img/adv-cash.png" alt=""></span><p class="b-how-it-work__text">Купите квартиру по сертификату</p></li>
-				<li class="b-how-it-work__item"><span class="b-how-it-work__icon"><img src="img/adv-clocks.png" alt=""></span><p class="b-how-it-work__text">Подождите
-активацию кэшбэка</p></li>
-				<li class="b-how-it-work__item"><span class="b-how-it-work__icon"><img src="img/adv-cashback.png" alt=""></span><p class="b-how-it-work__text">Забирайте сэкономленные деньги</p></li>
-			</ul>
+		<div class="b-block b-how-it-work clearfix">
+			<div class="l-container">
+				<h3 class="b-block__h3">Как это работает</h3>
+				<ul class="b-how-it-work__list">
+					<li class="b-how-it-work__item"><span class="b-how-it-work__icon"><img src="img/adv-building.png" alt=""></span><p class="b-how-it-work__text">Выберите застройщика</p></li>
+					<li class="b-how-it-work__item"><span class="b-how-it-work__icon"><img src="img/adv-docs.png" alt=""></span><p class="b-how-it-work__text">Распечатайте сертификат на Кэшбэк</p></li>
+					<li class="b-how-it-work__item"><span class="b-how-it-work__icon"><img src="img/adv-cash.png" alt=""></span><p class="b-how-it-work__text">Купите квартиру по сертификату</p></li>
+					<li class="b-how-it-work__item"><span class="b-how-it-work__icon"><img src="img/adv-clocks.png" alt=""></span><p class="b-how-it-work__text">Подождите
+	активацию кэшбэка</p></li>
+					<li class="b-how-it-work__item"><span class="b-how-it-work__icon"><img src="img/adv-cashback.png" alt=""></span><p class="b-how-it-work__text">Забирайте сэкономленные деньги</p></li>
+				</ul>
+			</div>
 		</div>
 
 		<div class="b-block b-what-it-is">
@@ -45,26 +51,28 @@
 			<div class="l-container">
 				<h3 class="b-block__h3">Часто задаваемые вопросы</h3>
 				
-				<div class="b-faq__item">
-					<p class="b-faq__question">Как ваш сервис поможет мне сэкономить на покупке жилья?</p>
-					<p class="b-faq__ask">Ни для кого не секрет, что застройщики предлагают риелторам комиссионное вознаграждение за помощь в продаже квартир. </p>	
-				</div>
+				<div class="b-faq__wrapper">
+					<div class="b-faq__item">
+						<p class="b-faq__question">Как ваш сервис поможет мне сэкономить на покупке жилья?</p>
+						<p class="b-faq__ask">Ни для кого не секрет, что застройщики предлагают риелторам комиссионное вознаграждение за помощь в продаже квартир. </p>	
+					</div>
 
-				<div class="b-faq__item">
-					<p class="b-faq__question">А вы точно мне отдадите кэшбэк? Где гарантии? Может вы шарлатаны..</p>
-					<p class="b-faq__ask">Ни для кого не секрет, что застройщики предлагают риелторам комиссионное вознаграждение за помощь в продаже квартир.  </p>	
-				</div>
+					<div class="b-faq__item">
+						<p class="b-faq__question">А вы точно мне отдадите кэшбэк? Где гарантии? Может вы шарлатаны..</p>
+						<p class="b-faq__ask">Ни для кого не секрет, что застройщики предлагают риелторам комиссионное вознаграждение за помощь в продаже квартир.  </p>	
+					</div>
 
-				<div class="b-faq__item">
-					<p class="b-faq__question">Как ваш сервис поможет мне сэкономить на покупке жилья?</p>
-					<p class="b-faq__ask">Ни для кого не секрет, что застройщики предлагают риелторам комиссионное вознаграждение за помощь в продаже квартир. </p>	
-				</div>
+					<div class="b-faq__item">
+						<p class="b-faq__question">Как ваш сервис поможет мне сэкономить на покупке жилья?</p>
+						<p class="b-faq__ask">Ни для кого не секрет, что застройщики предлагают риелторам комиссионное вознаграждение за помощь в продаже квартир. </p>	
+					</div>
 
-				<div class="b-faq__item">
-					<p class="b-faq__question">А вы точно мне отдадите кэшбэк? Где гарантии? Может вы шарлатаны..</p>
-					<p class="b-faq__ask">Ни для кого не секрет, что застройщики предлагают риелторам комиссионное вознаграждение за помощь в продаже квартир.  </p>	
+					<div class="b-faq__item">
+						<p class="b-faq__question">А вы точно мне отдадите кэшбэк? Где гарантии? Может вы шарлатаны..</p>
+						<p class="b-faq__ask">Ни для кого не секрет, что застройщики предлагают риелторам комиссионное вознаграждение за помощь в продаже квартир.  </p>	
+					</div>	
 				</div>
-				
+							
 			</div>
 		</div>
 

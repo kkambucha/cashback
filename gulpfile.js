@@ -71,32 +71,32 @@ gulp.task('html:build', function () {
 gulp.task('js:build', function () {
     gulp.src(path.src.js) //Найдем наш main файл
         .pipe(rigger()) //Прогоним через rigger
-        .pipe(sourcemaps.init()) //Инициализируем sourcemap
-        .pipe(uglify()) //Сожмем наш js
-        .pipe(sourcemaps.write()) //Пропишем карты
+        // .pipe(sourcemaps.init()) //Инициализируем sourcemap
+        // .pipe(uglify()) //Сожмем наш js
+        // .pipe(sourcemaps.write()) //Пропишем карты
         .pipe(gulp.dest(path.build.js)) //Выплюнем готовый файл в build
         .pipe(reload({stream: true})); //И перезагрузим сервер
 });
 
 gulp.task('style:build', function () {
     gulp.src(path.src.style) //Выберем наш main.scss
-        .pipe(sourcemaps.init()) //То же самое что и с js
+        // .pipe(sourcemaps.init()) //То же самое что и с js
         .pipe(sass()) //Скомпилируем
         .pipe(prefixer()) //Добавим вендорные префиксы
-        .pipe(cssmin({
-            //https://www.npmjs.com/package/clean-css#how-to-set-compatibility-mode
-            compatibility: 'ie7,' +
-            '-units.ch,' +
-            '-units.in,' +
-            '-units.pc,' +
-            '-units.pt,' +
-            '-units.rem,' +
-            '-units.vh,' +
-            '-units.vm,' +
-            '-units.vmax,' +
-            '-units.vmin'
-        })) //Сожмем
-        .pipe(sourcemaps.write())
+        // .pipe(cssmin({
+        //     //https://www.npmjs.com/package/clean-css#how-to-set-compatibility-mode
+        //     compatibility: 'ie7,' +
+        //     '-units.ch,' +
+        //     '-units.in,' +
+        //     '-units.pc,' +
+        //     '-units.pt,' +
+        //     '-units.rem,' +
+        //     '-units.vh,' +
+        //     '-units.vm,' +
+        //     '-units.vmax,' +
+        //     '-units.vmin'
+        // })) //Сожмем
+        // .pipe(sourcemaps.write())
         .pipe(gulp.dest(path.build.css))
         // .on('end', function(){ gutil.log('Done!'); }); //И в build
         .pipe(reload({stream: true}));

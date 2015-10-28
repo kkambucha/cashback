@@ -1,3 +1,7 @@
 (function(){
-    console.log('it\'s work');
+	if($('#b-slider').length > 0){
+		$('#b-slider').bxSlider({
+			'controls' : false
+		});
+	}   
 })();
