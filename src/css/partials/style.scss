@@ -60,6 +60,12 @@ header{
 .l-table-row{
 	display: table-row;
 }
+.l-col50{
+	float: left;
+	width: 50%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
 .l-clearer{
 	clear:both;
 }
@@ -90,7 +96,7 @@ header{
 }
 
 .b-region{ display: table-cell; overflow: hidden; vertical-align: middle; padding: 0 0 0 50px; 
-	&__select{ font-family: $Tahoma; font-size: 1.5em; color: $Gray; }
+	&__select{ font-family: $Tahoma; font-size: 1.5em; color: $Gray; width: 70%; }
 }
 
 .b-account-block{ vertical-align: middle; overflow: hidden; display: table-cell;
@@ -128,9 +134,9 @@ header{
 	&__icon{ display: block; width: 152px; height: 152px; box-sizing: border-box; overflow: hidden; text-align: center; }
 	&__icon--dev{  }
 }
-.b-what-it-is{ background: $LightGray2; height: 505px; position: relative;
-	&__image{ display: inline-block; float: left; width: 372px; margin: 0 46px 0 0; }
-	&__text{ font-family: $OpenSans; color: $LightGray3; display: table-cell; vertical-align: middle; }
+.b-what-it-is{ background: $LightGray2; min-height: 505px; position: relative;
+	&__image{ display: block; float: left; width: 372px; margin: 0 46px 0 0; position: absolute; bottom: 0; }
+	&__text{ font-family: $OpenSans; color: $LightGray3; display: block; margin: 0 0 0 410px; padding: 40px 0 10px 0; }
 	&__text h3{ color: $Black; font-size: 4.4em; font-weight: $SemiBold; margin: 0 0 0.7em 0; }
 	&__text p{ font-size: 1.6em; margin: 0 0 2.6em 0; }
 	&__text a{ color: $HrefsColor; text-decoration: none; 
@@ -139,7 +145,7 @@ header{
 }
 .b-faq{
 	&__wrapper{ overflow: hidden; margin-right: -20px; }
-	&__item{ box-sizing: border-box; width: 50%; float: left; padding: 0 20px 0 0; margin: 0 0 30px 0; }
+	&__item{ box-sizing: border-box; padding: 0 20px 0 0; margin: 0 0 30px 0; }
 	&__question{ display: block; box-sizing: border-box; padding: 20px; font-family: $OpenSans; font-weight: $Regular; font-size: 1.7em; background: $LightGray; color: $LightBlue2; }
 	&__ask{ display: block; box-sizing: border-box; padding: 20px; font-family: $OpenSans; font-weight: $SemiBold; font-size: 1.7em; color: $YellowDark2; background: $YellowDark url('../img/faq-ask.png') 95% top no-repeat; }
 }
