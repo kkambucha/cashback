@@ -6,9 +6,10 @@
 	img{ display: inline-block; margin-bottom: 5em; }
 
 	.b-btn{ display: inline-block; background: $Green; font-family: $OpenSans; color: $White; border: 0; font-weight: $SemiBold; font-size: 2.4em; padding: 0.5em 1em; }
-	.b-btn:hover{ cursor: pointer; }
+	.b-btn:hover{ cursor: pointer; background-color: $HrefsColorH; }
 
 	.align-right{ float: right; margin-left: 30px; }
 	.center{ margin: 0 auto; text-align: center; }
+	.align-center{ text-align: center; }
 	.m-top{ margin-top: 20px; }
 }

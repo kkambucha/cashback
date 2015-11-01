@@ -12,5 +12,9 @@
 			width: "element"
 		});	
 	}
+
+	if($('#b-login__tabs').length > 0){
+		$('#b-login__tabs').tabs();
+	}
 	
 })();

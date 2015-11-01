@@ -87,7 +87,7 @@ header{
 .b-block{ display:block; overflow: hidden; margin-bottom: 45px; margin-top: 45px; width: 100%;
 	&__h3{ display: block; text-align: center; font-size: 4.4em; font-family: $OpenSans; font-weight: $SemiBold; margin: 0 0 1em 0; }
 }
-.b-logo{ overflow: hidden; display: table-cell; vertical-align: middle; width: 340px;
+.b-logo{ overflow: hidden; display: table-cell; vertical-align: middle; width: 350px;
 	&__href{ display: block; overflow: hidden; color: $DarkBlue; }
 	&__icon{ display: block; width: 50px; height: 45px; float: left; }
 	&__text{ display: inline-block; font-family: $OpenSans; font-weight: $Regular; font-size: 36px; }
@@ -173,18 +173,88 @@ header{
 	.bx-wrapper .bx-pager{ padding-top: 0; bottom: 38px; }
 	.bx-wrapper .bx-pager .bx-pager-item{ margin: 0 -7px; }
 
-.icon-point1 {
-  background-image: url(../img/points-sprite.png);
-  background-position: 0px 0px;
-  width: 30px;
-  height: 30px;
 }
-.icon-point2 {
-  background-image: url(../img/points-sprite.png);
-  background-position: -30px 0px;
-  width: 30px;
-  height: 30px;
+.b-team { display: block; overflow: hidden; text-align: center; font-size: 0; margin: 50px 0 -30px 0;
+	&__item { display: inline-block; width: 25%; margin: 0 0 30px 0; opacity: 0.7; cursor: pointer; }
+	&__item:hover { opacity: 1; }
+	&__photo { display: block; margin: 0 0 10px 0 !important; border-radius: 3px; }
+	&__descript { font-size: 14px; font-family: $OpenSans; display: block; overflow: hidden; }
+	&__descript b { font-size: 1em !important; font-size: 21px !important; font-weight: $SemiBold !important; line-height: 1em !important; }
+	&__descript p { font-size: 1em !important; font-size: 14px !important; text-transform: lowercase; line-height: 1em !important; margin: 0 0 10px 0 !important; }
 }
+.b-offers-form { background: $LightGray; font-family: $Tahoma; margin: 0 0 15px 0;
+	&__form { display: table-row; }
+	&__item { display: table-cell; padding: 13px 0; vertical-align: middle; text-align: left; }
+	&__label { color: $DarkBlue2; font-size: 1.5em; margin: 0 10px 0 0; }
+	&__select { color: $Gray; font-size: 1.5em; padding: 3px 5px; }
+	&__submit { float: right; display: block; text-align: center; background: $Green; border: 0; color: $White; cursor: pointer; padding: 7px 30px; font-family: $Tahoma; font-size: 1.5em; }
+	&__submit:hover { background: $GreenH; }
+}
+.b-offers-list { display: block; overflow: hidden; 
+	&__item { display: block; overflow: hidden; margin: 0 0 60px 0; }
+	&__image { width: 60%; float: left; position: relative; box-sizing: border-box;
+		&__img { width: 100%; height: auto; }
+		&__perc { display:block; position: absolute; top: 50%; left: 50%; width: 140px; height: 140px; opacity: 0.8; background: $Green; margin: -70px 0 0 -70px; border-radius: 50%; }
+		&__cashback { display:block; position: absolute; top: 50%; left: 50%; width: 140px; height: 140px; opacity: 1; font-family: $OpenSans; font-weight: $SemiBold; font-size: 24px; text-align: center; color: $DarkBlue2; margin: -70px 0 0 -70px; line-height: 24px; text-transform: uppercase; padding: 40px 0; box-sizing: border-box; }
+		&__cashback span { font-weight: $XBold; font-size: 48px; line-height: 40px; }
+	}
+	&__description { font-size: 1.3em; display: block; float: right; font-family: $OpenSans; width: 40%; padding: 0 0 0 30px; box-sizing: border-box;
+		h5 { font-weight: $SemiBold; font-size: 2em; margin: 0 0 1em 0; line-height: 1em; }
+		p { line-height: 1.8em; color: $DarkGray; margin: 0 0 1em 0; }
+		b { color: $DarkBlue2; font-weight: $Bold; }
+		&__develop { display: table; width: 100%; margin: 0 0 1em 0; padding-top: 0.4em;
+			b { display: inline-block; width: 100%; }
+			ul { display: table-row; }
+			li { display: table-cell; width: 20%; text-align: center; border-right: 2px solid $LightGray; }
+			li:first-child { text-align: left; width: 45%; }
+			li:last-child { text-align: right; width: 35%; border: 0; }
+		}
+		a { font-family: $OpenSans; font-size: 1em; color: $Black; }
+		a:hover { text-decoration: none; }
+		a.btn { display: inline-block; background: $Green; color: $White; text-decoration: none; font-weight: $SemiBold; font-size: 1.2em; padding: 10px 30px; border-radius: 3px; }
+		a.btn:hover { background: $GreenH; }
+	}
+	&__more { display: block; text-align: center; position: relative;
+		&__href { display: inline-block; border: 4px solid $DarkBlue2;  
+			a { color: $DarkBlue2; font-weight: $SemiBold; font-size: 2em; font-family: $OpenSans; text-decoration: none; display: block; padding: 20px 36px; }
+			span { border-bottom: 1px dashed $DarkBlue2; }
+			a:hover span { border: none; }
+		}
+		&__terminate { display: block; width: 30%; background:transparent url('../img/terminate.png') center center repeat-x; height: 1px; position: absolute; top: 50%; left: 0; }
+		&__terminate--right { left: auto; right: 0; }
+	}
+}
+.b-login { width: 70%; margin: 0 auto;
+	&__tabs { margin: 0 0 30px 0;
+		ul { display: block; overflow: hidden; }
+		.ui-state-active { background: $LightGray; }
+		.ui-state-active a { color: $Black; }
+		.ui-state-active span { border: 0; }
+		&__link { display: block; overflow: hidden; width: 50%; float: left; text-align: center; }
+		&__link a { text-decoration: none; padding: 20px 0 30px 0; display: block; color: $HrefsColor; }
+		&__link a:focus { outline: none; }
+		&__link a span { font-family: $OpenSans; font-weight: $SemiBold; font-size: 3em; border-bottom: 2px dashed $HrefsColor; }
+		&__tab { display: block; background: $LightGray; }
+	}
+	&__note { text-align: center; padding: 0 60px; 
+		p { font-family: $OpenSans; font-size: 1.6em; line-height: 1.5em; display: inline-block; margin: 0 0 30px 0; }
+		&__back { font-family: $OpenSans; font-weight: $SemiBold; font-size: 1.7em; display: inline-block; text-decoration: none; color: $DarkBlue2; border: 2px solid $DarkBlue2; border-radius: 4px; padding: 5px 25px; }
+		&__back:hover { text-decoration: underline; }
+	}
+	&__form { display: block; padding: 65px; overflow: hidden;
+		&__wrapper { display: table; overflow: hidden; width: 100%; box-sizing: border-box; }
+		&__item { display: table-row; font-family: $OpenSans; font-weight: $SemiBold; font-size: 2.4em; color: $Black; }
+		&__item label { display: table-cell; padding: 0 30px 25px 0; vertical-align: middle; box-sizing: border-box; text-align: right; width: 30%; }
+		&__item__input { display: table-cell; vertical-align: middle; width: 70%; box-sizing: border-box; padding: 2px 2px 25px 0; }
+		&__item__input input { font-family: $OpenSans; font-weight: $SemiBold; font-size: 1em; color: $Black; padding: 3px 10px; width: 100%; box-sizing: border-box; }
+		&__forgot { display: block; width: 70%; float: right; }
+		&__forgot a { font-family: $OpenSans; font-weight: $Bold; color: $Black; font-size: 1.5em; margin: 0 0 25px 0; display: inline-block; }
+		&__enter { width: 70%; float: right; }
+		&__enter input { display: inline-block; border: 0; background:$Green; color: $White; font-family: $OpenSans; font-weight: $SemiBold; padding: 12px 30px; cursor: pointer; font-size: 1.7em; border-radius: 4px; }
+		&__enter input:hover { background:$GreenH; }
+		&__enter input:focus { outline: none; }
+	} 
+	
 }
 /*-----------------------------------HOLDERS----------------------------------*/
 

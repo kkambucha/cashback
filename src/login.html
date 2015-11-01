@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<link type="text/css" rel="stylesheet" href="css/main.css" />
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- // <script src="js/jquery.min.js"></script> -->
+    
+	<title>Заголовок</title>
+</head>
+<body>
+	<div class="l-wrap">
+        
+		//= template/header.html
+
+		<div class="b-block">
+			<div class="l-container">
+				<div class="b-login">
+					<div class="b-login__tabs" id="b-login__tabs">
+						<ul>
+							<li class="b-login__tabs__link"><a href="#tab-1"><span>Вход</span></a></li>
+							<li class="b-login__tabs__link"><a href="#tab-2"><span>Регистрация</span></a></li>
+						</ul>
+						<div class="b-login__tabs__tab" id="tab-1">
+							
+							<form action="#" method="POST" class="b-login__form">
+								<div class="b-login__form__wrapper">
+									<div class="b-login__form__item">
+										<label for="email">E-mail:</label>
+										<div class="b-login__form__item__input">
+											<input type="text" name="email">	
+										</div>
+									</div>
+									<div class="b-login__form__item">
+										<label for="password">Пароль:</label>
+										<div class="b-login__form__item__input">
+											<input type="password" name="password">
+										</div>
+									</div>
+								</div>
+								<div class="b-login__form__forgot">
+									<a href="#">Забыли пароль?</a>
+								</div>
+								<div class="b-login__form__enter">
+									<input type="submit" value="Войти">	
+								</div>
+							</form>
+
+						</div>
+						<div class="b-login__tabs__tab" id="tab-2">
+							
+							<form action="#" method="POST" class="b-login__form">
+								<div class="b-login__form__wrapper">
+									<div class="b-login__form__item">
+										<label for="fio">ФИО:</label>
+										<div class="b-login__form__item__input">
+											<input type="text" name="fio">	
+										</div>
+									</div>
+									<div class="b-login__form__item">
+										<label for="emailreg">E-mail:</label>
+										<div class="b-login__form__item__input">
+											<input type="text" name="emailreg">	
+										</div>
+									</div>
+									<div class="b-login__form__item">
+										<label for="passwordreg">Пароль:</label>
+										<div class="b-login__form__item__input">
+											<input type="password" name="passwordreg">
+										</div>
+									</div>
+								</div>
+								<div class="b-login__form__forgot">
+									<a href="#">Забыли пароль?</a>
+								</div>
+								<div class="b-login__form__enter">
+									<input type="submit" value="Регистрация">	
+								</div>
+							</form>
+
+						</div>
+					</div>
+
+					<div class="b-login__note">
+						<p>Для оформления сертификата на кэшбэк в ЖК Центральная Аллея вам необходимо войти в сервис или зарегистрироваться.</p>
+						<a href="#" class="b-login__note__back">Назад</a>
+					</div>	
+				</div>
+			</div>
+		</div>
+
+		<div class="l-clearer"></div>
+        
+        <div class="l-empty"></div>
+	</div>
+	
+	//= template/footer.html
+	
+	<script src="js/main.js"></script>
+
+</body>
+</html>
