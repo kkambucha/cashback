@@ -23,10 +23,12 @@ header{
     display: block;
     width: 100%;
 }
-.l-container{ box-sizing: border-box; padding: 0 20px; width: 980px; overflow: hidden; margin: 0 auto; display: table;
-	&--footer{ padding: 47px 20px; }
-	&--header{ padding: 33px 20px; }
+.l-container { box-sizing: border-box; padding: 0 20px; width: 980px; overflow: hidden; margin: 0 auto; display: table;
+	&--footer { padding: 47px 20px; }
+	&--header { padding: 33px 20px; }
 }
+.l-column-row { display: block; overflow: hidden; margin: 0 0 0 -40px; }
+.l-column50 { display: block; width: 50%; float: left; padding: 0 0 0 40px; box-sizing: border-box; }
 .l-wrap {
 	// width:100%;
 	// max-width:100%;
@@ -84,9 +86,6 @@ header{
     *zoom: 1;
 }
 /*-----------------------------------BLOCKS----------------------------------*/
-.b-block{ display:block; overflow: hidden; margin-bottom: 45px; margin-top: 45px; width: 100%;
-	&__h3{ display: block; text-align: center; font-size: 4.4em; font-family: $OpenSans; font-weight: $SemiBold; margin: 0 0 1em 0; }
-}
 .b-logo{ overflow: hidden; display: table-cell; vertical-align: middle; width: 350px;
 	&__href{ display: block; overflow: hidden; color: $DarkBlue; }
 	&__icon{ display: block; width: 50px; height: 45px; float: left; }
@@ -125,7 +124,7 @@ header{
 	&__text{ display: block; text-align: center; vertical-align: middle; text-transform: uppercase; font-size: 3.7em; color: $White; font-family: $OpenSans; font-weight: $SemiBold; padding: 23px 0;}
 }
 .b-how-it-work{ display: block; overflow: visible;
-	&__list{ display: block; margin-right: -50px; overflow: visible; }
+	&__list{ display: block; margin-right: -50px; margin-bottom: 40px; overflow: visible; }
 	&__item{ display: block; float: left; width: 20%; position: relative;
 		&:after{ content: ' '; display: block; position: absolute; top: 0; right: 7px; width: 34px; height: 100%; background:transparent url('../img/arrow-left.png') center 65px no-repeat; }
 		&:last-child:after{ display: none; }
@@ -190,7 +189,7 @@ header{
 	&__submit { float: right; display: block; text-align: center; background: $Green; border: 0; color: $White; cursor: pointer; padding: 7px 30px; font-family: $Tahoma; font-size: 1.5em; }
 	&__submit:hover { background: $GreenH; }
 }
-.b-offers-list { display: block; overflow: hidden; 
+.b-offers-list { display: block; overflow: hidden; margin-bottom: 0 !important; 
 	&__item { display: block; overflow: hidden; margin: 0 0 60px 0; }
 	&__image { width: 60%; float: left; position: relative; box-sizing: border-box;
 		&__img { width: 100%; height: auto; }
@@ -213,15 +212,6 @@ header{
 		a:hover { text-decoration: none; }
 		a.btn { display: inline-block; background: $Green; color: $White; text-decoration: none; font-weight: $SemiBold; font-size: 1.2em; padding: 10px 30px; border-radius: 3px; }
 		a.btn:hover { background: $GreenH; }
-	}
-	&__more { display: block; text-align: center; position: relative;
-		&__href { display: inline-block; border: 4px solid $DarkBlue2;  
-			a { color: $DarkBlue2; font-weight: $SemiBold; font-size: 2em; font-family: $OpenSans; text-decoration: none; display: block; padding: 20px 36px; }
-			span { border-bottom: 1px dashed $DarkBlue2; }
-			a:hover span { border: none; }
-		}
-		&__terminate { display: block; width: 30%; background:transparent url('../img/terminate.png') center center repeat-x; height: 1px; position: absolute; top: 50%; left: 0; }
-		&__terminate--right { left: auto; right: 0; }
 	}
 }
 .b-login { width: 70%; margin: 0 auto;
@@ -256,12 +246,35 @@ header{
 	} 
 	
 }
+.b-conditions { 
+	h2 { font-family: $OpenSans; font-weight: $SemiBold; color: $Black; font-size: 3em; }
+	&__item { display: block; overflow: hidden; margin: 35px 0; }
+	&__icon { display: block; width: 96px; height: 97px; background-image: url('../img/sprite-cond.png'); float: left; margin: 0 20px 0 0; }
+	&__desc { font-family: $OpenSans; color: $Gray2; font-size: 1.4em; padding-top: 1em;
+		b { font-weight: $Bold; color: $Black; font-size: 1.1em; }
+	}
+	&__icon--1 { background-position: 0px 0px; }
+	&__icon--2 { background-position: -96px 0px; }
+	&__icon--3 { background-position: -192px 0px; }
+	&__icon--4 { background-position: 0px -97px; }
+	&__icon--5 { background-position: -96px -97px; }
+	&__table { width: 100%; font-family: $OpenSans; font-size: 1.7em; color: $Black; margin: 35px 0;
+		th { padding: 20px; font-weight: $SemiBold; background: $LightGray; }
+		td { padding: 20px; background: $LightGray; }
+		tr.even {
+			td { background: $White; }
+			th { background: $White; }
+		}
+	}
+	img { width: 100%; height: auto; }
+	.b-next-btn { margin: 0 0 0 116px; }
+}
 /*-----------------------------------HOLDERS----------------------------------*/
 
 /*-----------------------------------HELPERS----------------------------------*/
-.bordered{
+.bordered {
 	border:1px solid red;
 }
-.h-vertical-center{
+.h-vertical-center {
 
 }

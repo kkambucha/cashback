@@ -20,7 +20,7 @@ var path = {
     sprites : {
         images: 'src/sprite/*.*',
         buildPath: 'src/img/',
-        cssPath: 'src/css/sprite/'    
+        cssPath: 'src/css/'    
     },
     build: { //Тут мы укажем куда складывать готовые после сборки файлы
         html: 'build/',
