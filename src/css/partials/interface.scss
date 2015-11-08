@@ -10,8 +10,17 @@
 	}
 	&__terminate { display: block; width: 30%; background:transparent url('../img/terminate.png') center center repeat-x; height: 1px; position: absolute; top: 50%; left: 0; }
 	&__terminate--right { left: auto; right: 0; }
+	&--another-ofrs {
+		.b-more-button__terminate { width: 25%; }
+	}
 }
 .b-next-btn { display: inline-block;
 	a { display: inline-block; background: $Green; color: $White; font-family: $OpenSans; text-decoration: none; padding: 10px 25px; font-weight: $SemiBold; font-size: 1.8em; }
 	a:hover { background: $GreenH; }
+}
+.button { display: inline-block; font-size: 16px; font-family: $OpenSans; font-weight: $SemiBold; color: $Black; margin: 15px; text-decoration: none;
+	i { color: $Green; margin: 0 10px 0 0; }
+}
+.md-button { color: $DarkBlue2; text-decoration: none; border: 3px solid $DarkBlue2; display: inline-block; padding: 5px 20px; font-size: 1.8em; margin: 15px; text-decoration: none; border-radius: 5px;
+	&:hover { text-decoration: underline; }
 }
