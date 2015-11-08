@@ -20,3 +20,13 @@
 .center-big { text-align: center; font-family: $OpenSans; font-size: 1.6em; line-height: 1.7em; margin: 15px; }
 .align-center { text-align: center; }
 .marg-top20 { margin-top: 20px; }
+.marg-top40 { margin-top: 40px; }
+.b-table { width: 100%; font-family: $OpenSans; font-size: 1.3em; border: 1px solid $LightGray4; margin-bottom: 40px;
+	th { background: $DarkBlue2; color: $White; text-align: center; font-weight: $SemiBold; padding: 15px 8px; }
+	td { padding: 15px 8px; border-right: 1px solid $LightGray4; }
+	tr:nth-child(odd) { background: $LightGray; }
+	tr td:nth-child(1), tr td:nth-child(4) { color: $Green; }
+	tr td:nth-child(4) { font-weight: $Bold; }
+	&__action { color: $Black; text-decoration: none; margin: 0 3px 0 0; }
+}
+.green { color: $Green; }

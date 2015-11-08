@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<link type="text/css" rel="stylesheet" href="css/main.css" />
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- // <script src="js/jquery.min.js"></script> -->
+    
+	<title>Заголовок</title>
+</head>
+<body>
+	<div class="l-wrap">
+        
+		//= template/header.html
+
+		<div class="b-block b-personal-data">
+			<div class="l-container">
+				<h3 class="b-block__h3">Карточка пользователя</h3>
+				<div class="l-center-form">
+					<form action="#" method="POST" class="b-form">
+						
+						<div class="b-form__wrapper">
+							<div class="b-form__row">
+								<label for="fam" class="b-form__label">Фамилия:</label>
+								<div class="b-form__input-wrap">
+									<input type="text" class="b-form__input" name="fam">
+								</div>
+							</div>
+
+							<div class="b-form__row">
+								<label for="name" class="b-form__label">Имя:</label>
+								<div class="b-form__input-wrap">
+									<input type="text" class="b-form__input" name="name">
+								</div>
+							</div>
+
+							<div class="b-form__row">
+								<label for="otch" class="b-form__label">Отчество:</label>
+								<div class="b-form__input-wrap">
+									<input type="text" class="b-form__input" name="otch">
+								</div>
+							</div>
+
+							<div class="b-form__row">
+								<label for="birth" class="b-form__label">Дата рождения:</label>
+								<div class="b-form__input-wrap">
+									<input type="text" class="b-form__input b-form__input--short" name="birth">
+									<a href="#" class="b-form__picker"> <i class="icon-calendar"></i> </a>
+								</div>
+							</div>
+
+							<div class="b-form__row">
+								<label for="otch" class="b-form__label">Телефон:</label>
+								<div class="b-form__input-wrap">
+									<input type="text" class="b-form__input" name="otch">
+								</div>
+							</div>
+						</div>
+
+						<hr class="b-form__hr">
+						
+						<h4 class="b-form__header">Паспортные данные</h4>
+
+						<div class="b-form__wrapper">
+
+							<div class="b-form__row">
+								<label for="serial" class="b-form__label">Серия:</label>
+								<div class="b-form__input-wrap">
+									<input type="text" class="b-form__input b-form__input--short" name="serial">
+									<label for="number" class="b-form__label b-form__label--1-2">Номер:</label>
+									<input type="text" class="b-form__input b-form__input--short" name="number">
+								</div>
+							</div>
+							
+							<div class="b-form__row">
+								<label for="from" class="b-form__label">Кем выдан:</label>
+								<div class="b-form__input-wrap">
+									<input type="text" class="b-form__input" name="from">
+								</div>
+							</div>
+							
+							<div class="b-form__row">
+								<label for="date" class="b-form__label">Дата выдачи:</label>
+								<div class="b-form__input-wrap">
+									<input type="text" class="b-form__input b-form__input--short" name="date">
+									<a href="#" class="b-form__picker"> <i class="icon-calendar"></i> </a>
+								</div>
+							</div>
+							
+						</div>	
+						
+						<div class="b-form__submit">
+							<input type="submit" value="Далее">	
+						</div>
+						
+					</form>
+
+					<p class="center-big marg-top40">Вам необходимо заполнить эту форму для того,чтобы мы могли составить для вас персональный сертификатна кэшбэк и связаться с вами когда кэшбэк будет готов для вывода</p>
+
+					<div class="align-center">
+						<a href="#" class="md-button">Назад</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="l-clearer"></div>
+        
+        <div class="l-empty"></div>
+	</div>
+	
+	//= template/footer.html
+	
+	<script src="js/main.js"></script>
+
+</body>
+</html>

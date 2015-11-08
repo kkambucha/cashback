@@ -71,6 +71,13 @@ header{
 .l-clearer{
 	clear:both;
 }
+.l-center-form{
+	display: block;
+	width: 75%;
+	margin: 0 auto;
+	overflow: hidden;
+	margin-bottom: 40px;
+}
 .clearfix:before,
 .clearfix:after {
     content: " ";
@@ -296,6 +303,39 @@ header{
 		.b-notices__item .b-notices__item__mess, .b-notices__item .b-notices__datetime:after { background-color: #d3dd9c; }
 		.b-notices__item:nth-last-child(1) .b-notices__item__mess, .b-notices__item:nth-last-child(1) .b-notices__datetime:after { background-color: #f5f5f6; }
 		.b-notices__item:nth-last-child(2) .b-notices__item__mess, .b-notices__item:nth-last-child(2) .b-notices__datetime:after { background-color: #e5eac4; }
+	}
+}
+.b-form { display: block; padding: 40px 56px; background: $LightGray4; width: 100%; box-sizing: border-box; font-family: $OpenSans; overflow: hidden;
+	&__wrapper { display: table; width: 100%; box-sizing: border-box; }
+	&__row { display: table-row; border: 1px solid red; }
+	&__label { display: table-cell; vertical-align: middle; width: 30%; font-size: 1.8em; }
+	&__input-wrap { display: table-cell; vertical-align: middle; width: 70%; }
+	&__input { display: block; width: 100%; font-size: 2em; box-sizing: border-box; padding: 3px 5px; margin: 15px 0; border: 1px solid #cfcfcf; float: left; }
+	&__input--short { width: 30%; }
+	&__picker { display: block; width: 30px; height: 30px; float: left; margin: 15px 10px; font-size: 25px; text-decoration: none; color: $Gray2; }
+	&__hr { display: block; width: 100%; border-top: 1px solid $Gray; margin: 40px 0 50px 0; }
+	&__header { font-family: $OpenSans; font-size: 1.8em; margin: 10px 0; }
+	&__label--1-2 { display: inline-block; width: auto; float: left; margin: 10px; padding-top: 3px; }
+	&__submit { width: 70%; float: right; display: block; margin: 10px 0; overflow: hidden; 
+		input, button { display: inline-block; border: 0; background:$Green; color: $White; font-family: $OpenSans; font-weight: $SemiBold; padding: 12px 30px; cursor: pointer; font-size: 1.7em; border-radius: 5px; }
+		input:hover, button:hover { background:$GreenH; }
+	}
+}
+.b-steps{ height: 266px; position: relative; background-size: 100% 100%; font-family: $OpenSans;
+	img { width: 100%; height: 266px; position: absolute; top: 0; left: 0; }
+	&__wrapper { box-sizing: border-box; padding: 0 20px; width: 980px; overflow: hidden; margin: 0 auto; display: block; }
+	&__ul {  display: block; overflow: hidden; font-size: 16px; width: 100%;
+		li { display: block; float: left; box-sizing: border-box; font-weight: $SemiBold; color: $White; position: relative; }
+		li:last-child { 
+			&:after { display: none; }
+		}
+		li:after { content: ' '; display: block; width: 51px; height: 22px; background:transparent url('../img/steps-arrow.png') left top no-repeat; position: absolute; top: 25%; right: 15px; }
+		li.active .b-steps__round { background-color: $Green; color: $White; }
+	}
+	&__round { font-size: 20px; color: $DarkBlue2; width: 44px; height: 44px; border-radius: 50%; background: $LightGray4; display: block; float: left; padding: 8px 0 0 17px; box-sizing: border-box; }
+	&__text { display: block; width: 140px; float: left; margin: 0 0 0 10px; }	
+	&__header { width: 100%; font-size: 30px; text-align: center; padding: 50px 0; color: $Yellow; 
+		b { color: $White; }
 	}
 }
 /*-----------------------------------HOLDERS----------------------------------*/
