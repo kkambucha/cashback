@@ -13,3 +13,7 @@
 	.align-center{ text-align: center; }
 	.m-top{ margin-top: 20px; }
 }
+.b-center-bold{ font-family: $OpenSans; color: $LightGray3; font-weight: $SemiBold; font-size: 2.3em; display: block; text-align: center; 
+	a{ text-decoration: none; color: $HrefsColor; }
+	a:hover{ text-decoration: underline; }
+}

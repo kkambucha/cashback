@@ -1,0 +1,43 @@
+.icon-cash { background-image: url('../img/sprite-hiw.png'); background-position: 0px 0px; width: 78px; height: 78px; }
+.icon-clock { background-image: url('../img/sprite-hiw.png'); background-position: -78px 0px; width: 78px; height: 78px; }
+.icon-coinholder { background-image: url('../img/sprite-hiw.png'); background-position: 0px -78px; width: 78px; height: 78px; }
+.icon-doc { background-image: url('../img/sprite-hiw.png'); background-position: -78px -78px; width: 78px; height: 78px; }
+.icon-tower { background-image: url('../img/sprite-hiw.png'); background-position: -156px 0px; width: 78px; height: 78px; }
+
+.b-conditions__icon { display: block; width: 96px; height: 97px; background-image: url('../img/sprite-cond.png'); float: left; margin: 0 20px 0 0; }
+.b-conditions__icon--1 { background-position: 0px 0px; }
+.b-conditions__icon--2 { background-position: -96px 0px; }
+.b-conditions__icon--3 { background-position: -192px 0px; }
+.b-conditions__icon--4 { background-position: 0px -97px; }
+.b-conditions__icon--5 { background-position: -96px -97px; }
+
+.icon-arrow-left { background-image: url('../img/sprite-arrows.png'); background-position: 0px 0px; width: 34px; height: 25px; }
+.icon-arrow-right { background-image: url('../img/sprite-arrows.png'); background-position: -34px 0px; width: 34px; height: 25px; }
+
+/* ICOMOON-ICONS */
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-vk:before { content: "\e803"; }
+.icon-home3:before { content: "\e900"; }
+.icon-file-text2:before { content: "\e901"; }
+.icon-calendar:before { content: "\e902"; }
+.icon-printer:before { content: "\e903"; }
+.icon-mobile:before { content: "\e800"; }
+.icon-floppy-disk:before { content: "\e904"; }
+.icon-user:before { content: "\e905"; }
+.icon-search:before { content: "\e906"; }
+.icon-lock:before { content: "\e907"; }
+.icon-bin:before { content: "\e908"; }

@@ -100,11 +100,10 @@ header{
 
 .b-account-block{ vertical-align: middle; overflow: hidden; display: table-cell;
 	ul { display: inline-block; float: right; }
-	li { display: inline-block; }
-	&__href{ color: $Yellow; text-decoration: none; font-family: $Tahoma; font-size: 1.5em; background:transparent url('../img/icons.png') 2px 2px no-repeat; padding: 0 0 0 20px; margin: 0 0 0 20px; }
+	li { display: inline-block; font-size: 1.4em; color: $Gray; padding: 0 0 0 10px; }
+	&__href{ color: $Yellow; text-decoration: none; font-family: $Tahoma; }
 	&__href:hover { text-decoration: underline; }
-	&__href--reg {  }
-	&__href--enter { background-position: 0 -14px; }
+	i { margin: 0 5px 0 0; }
 }
 
 .b-copyright{ color: $LightBlue; font-size: 1.5em; display: table-cell; vertical-align: middle; }
@@ -249,19 +248,13 @@ header{
 .b-conditions { 
 	h2 { font-family: $OpenSans; font-weight: $SemiBold; color: $Black; font-size: 3em; }
 	&__item { display: block; overflow: hidden; margin: 35px 0; }
-	&__icon { display: block; width: 96px; height: 97px; background-image: url('../img/sprite-cond.png'); float: left; margin: 0 20px 0 0; }
 	&__desc { font-family: $OpenSans; color: $Gray2; font-size: 1.4em; padding-top: 1em;
 		b { font-weight: $Bold; color: $Black; font-size: 1.1em; }
 	}
-	&__icon--1 { background-position: 0px 0px; }
-	&__icon--2 { background-position: -96px 0px; }
-	&__icon--3 { background-position: -192px 0px; }
-	&__icon--4 { background-position: 0px -97px; }
-	&__icon--5 { background-position: -96px -97px; }
 	&__table { width: 100%; font-family: $OpenSans; font-size: 1.7em; color: $Black; margin: 35px 0;
 		th { padding: 20px; font-weight: $SemiBold; background: $LightGray; }
 		td { padding: 20px; background: $LightGray; }
-		tr.even {
+		tr:nth-child(even) {
 			td { background: $White; }
 			th { background: $White; }
 		}
@@ -269,12 +262,25 @@ header{
 	img { width: 100%; height: auto; }
 	.b-next-btn { margin: 0 0 0 116px; }
 }
+.b-hiw{ display: block; overflow: hidden; padding: 20px 0 30px 0; 
+	&__block { box-sizing: border-box; border: 13px solid $LightGray4; padding: 10px 20px; text-align: center; position: relative; float: left; margin: 0 0 0 22px; }
+	&__type { display: inline-block; margin: 0 0 10px 0; }
+	&__num { display: block; float: left; font-family: $OpenSans; font-weight: $Light; font-size: 30px; color: $Gray; height: 55px; padding-top: 23px; }
+	&__header { display: block; font-family: $OpenSans; font-weight: $SemiBold; color: $Black; font-size: 1.5em; padding: 0 10%; line-height: 1.2em; margin: 0 0 15px 0; }
+	&__desc { color: $Gray; font-family: $OpenSans; font-size: 1.4em; line-height: 1.5em; margin: 0 0 15px 0; }
+	&__arrow { display: block; position: absolute; right: -32px; z-index: 10; }
+	i { display: block; float: left; }
+	&__block--gray { background: $LightGray4; }
+
+	&__block--first { width: 30%; .b-hiw__arrow { top: 50%; } }
+	&__block--sec { width: 22%; margin-top: 100px; .b-hiw__arrow { top: 10%; } }
+	&__block--third { width: 39%; margin-top: 0; .b-hiw__arrow { bottom: 1%; right: auto; left: -32px; } height: 530px; }
+	&__block--fourth { width: 30%; margin: -50px 0 0 27%; .b-hiw__arrow { top: 50%; } }
+	&__block--five { background: $Green; border-color: $Green; width: 39%; margin: 20px 0 0 19px; .b-hiw__arrow { display: none; } .b-hiw__num, .b-hiw__desc { color: $Black; } }
+}
 /*-----------------------------------HOLDERS----------------------------------*/
 
 /*-----------------------------------HELPERS----------------------------------*/
 .bordered {
 	border:1px solid red;
-}
-.h-vertical-center {
-
 }
