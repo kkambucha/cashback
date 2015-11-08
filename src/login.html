@@ -21,7 +21,7 @@
 					<div class="b-login__tabs" id="b-login__tabs">
 						<ul>
 							<li class="b-login__tabs__link"><a href="#tab-1"><span>Вход</span></a></li>
-							<li class="b-login__tabs__link"><a href="#tab-2"><span>Регистрация</span></a></li>
+							<li class="b-login__tabs__link"><a href="#tab-2" class="active"><span>Регистрация</span></a></li>
 						</ul>
 						<div class="b-login__tabs__tab" id="tab-1">
 							
@@ -54,29 +54,26 @@
 							<form action="#" method="POST" class="b-login__form">
 								<div class="b-login__form__wrapper">
 									<div class="b-login__form__item">
-										<label for="fio">ФИО:</label>
-										<div class="b-login__form__item__input">
-											<input type="text" name="fio">	
-										</div>
-									</div>
-									<div class="b-login__form__item">
 										<label for="emailreg">E-mail:</label>
 										<div class="b-login__form__item__input">
 											<input type="text" name="emailreg">	
 										</div>
 									</div>
 									<div class="b-login__form__item">
-										<label for="passwordreg">Пароль:</label>
+										<label for="passreg">Пароль:</label>
 										<div class="b-login__form__item__input">
-											<input type="password" name="passwordreg">
+											<input type="text" name="passreg">	
+										</div>
+									</div>
+									<div class="b-login__form__item">
+										<label for="passrepreg">Повторите пароль:</label>
+										<div class="b-login__form__item__input">
+											<input type="password" name="passrepreg">
 										</div>
 									</div>
 								</div>
-								<div class="b-login__form__forgot">
-									<a href="#">Забыли пароль?</a>
-								</div>
 								<div class="b-login__form__enter">
-									<input type="submit" value="Регистрация">	
+									<input type="submit" value="Зарегистрироваться">	
 								</div>
 							</form>
 
