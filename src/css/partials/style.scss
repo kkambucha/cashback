@@ -156,6 +156,7 @@ header{
 	p{ padding: 0 0 20px 0; }
 }
 .b-slider{ display: block; position: relative;
+	&__item{ height: 260px; overflow: hidden; }
 	&__picture{ width: 100%; height: auto; }
 	&__element{ min-height: 418px; }
 	&__label{ width: 323px; height: 174px; position: absolute; top: 45%; left: 50%; margin: -87px 0 0 -161px; }
@@ -175,7 +176,7 @@ header{
 	.bx-wrapper .bx-viewport{ box-shadow: none; }
 	.bx-wrapper .bx-pager.bx-default-pager a, .bx-wrapper .bx-pager.bx-default-pager a:hover{ width: 30px; height: 30px; background: transparent url('../img/points-sprite.png') no-repeat; background-position: -30px 0px; }
 	.bx-wrapper .bx-pager.bx-default-pager a.active { background:transparent url('../img/points-sprite.png') 0px 0px no-repeat; }
-	.bx-wrapper .bx-pager{ padding-top: 0; bottom: 38px; }
+	.bx-wrapper .bx-pager{ padding-top: 0; bottom: 20px; }
 	.bx-wrapper .bx-pager .bx-pager-item{ margin: 0 -7px; }
 
 }
