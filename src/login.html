@@ -27,18 +27,18 @@
 						</ul>
 						<div class="b-login__tabs__tab" id="tab-1">
 							
-							<form action="#" method="POST" class="b-login__form">
+							<form action="#" method="POST" class="b-login__form c-validate" id="login-form">
 								<div class="b-login__form__wrapper">
 									<div class="b-login__form__item">
 										<label for="email">E-mail:</label>
 										<div class="b-login__form__item__input">
-											<input type="text" name="email">	
+											<input type="text" name="email" class="email" required>	
 										</div>
 									</div>
 									<div class="b-login__form__item">
 										<label for="password">Пароль:</label>
 										<div class="b-login__form__item__input">
-											<input type="password" name="password">
+											<input type="password" name="password" required>
 										</div>
 									</div>
 								</div>
@@ -53,29 +53,29 @@
 						</div>
 						<div class="b-login__tabs__tab" id="tab-2">
 							
-							<form action="#" method="POST" class="b-login__form">
+							<form action="#" method="POST" class="b-login__form c-validate">
 								<div class="b-login__form__wrapper">
 									<div class="b-login__form__item">
 										<label for="emailreg">E-mail:</label>
 										<div class="b-login__form__item__input">
-											<input type="text" name="emailreg">	
+											<input type="text" name="emailreg" class="email" required>	
 										</div>
 									</div>
 									<div class="b-login__form__item">
 										<label for="passreg">Пароль:</label>
 										<div class="b-login__form__item__input">
-											<input type="text" name="passreg">	
+											<input type="text" name="passreg" required>	
 										</div>
 									</div>
 									<div class="b-login__form__item">
 										<label for="passrepreg">Повторите пароль:</label>
 										<div class="b-login__form__item__input">
-											<input type="password" name="passrepreg">
+											<input type="password" name="passrepreg" required>
 										</div>
 									</div>
 								</div>
 								<div class="b-login__form__enter">
-									<input type="submit" value="Зарегистрироваться">	
+									<input type="submit" value="Зарегистрироваться" id="open">	
 								</div>
 							</form>
 
@@ -98,6 +98,15 @@
 	//= template/footer.html
 	
 	<script src="js/main.js"></script>
+	
+	<div id="element_to_pop_up" class="b-popup">
+		<a class="b-close icon-close"></a>
+		<div class="b-content">
+			<h1>Заголовок</h1>
+			<p>Содержимое</p>	
+		</div>
+		
+	</div>
 
 </body>
 </html>

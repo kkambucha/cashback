@@ -21,6 +21,7 @@
 .align-center { text-align: center; }
 .marg-top20 { margin-top: 20px; }
 .marg-top40 { margin-top: 40px; }
+.marg-bot40 { margin-bottom: 40px; }
 .b-table { width: 100%; font-family: $OpenSans; font-size: 1.3em; border: 1px solid $LightGray4; margin-bottom: 40px;
 	th { background: $DarkBlue2; color: $White; text-align: center; font-weight: $SemiBold; padding: 15px 8px; }
 	td { padding: 15px 8px; border-right: 1px solid $LightGray4; }
@@ -30,3 +31,14 @@
 	&__action { color: $Black; text-decoration: none; margin: 0 3px 0 0; }
 }
 .green { color: $Green; }
+
+.b-content {
+	h1 { font-size: 2.5em; }
+	h2 { font-size: 2.3em; }
+	h3 { font-size: 2.1em; }
+	h4 { font-size: 1.8em; }
+	h5 { font-size: 1.6em; }
+	h6 { font-size: 1.4em; }
+
+	p { font-size: 1em; }
+}
